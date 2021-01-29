@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Spasso per Roma - Home </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="w3c.css">
+	<link rel="stylesheet" href="comuni/style.css">
+</head>
+<body>
+	<div class="main">
+		<div style="top:200px;"> <img src="comuni/logo.jpg" class="logo"> </div>
+		<nav id="hormenu">
+			<ul> 
+				<li> <a href="home.html"> Home </li> 
+				<li> <a href="chi_siamo.html"> <a href="#footer"> Chi siamo </li> 
+				<li> <a href> </a>
+				<li class="dropdown">
+					Giorni 
+					<div class="dropdown-content">
+						<p> <a href="gg1/gg1.html">  Giorno1 </a> </p>
+						<p> <a href="gg2/gg2.html">Giorno 2 </a> </p>
+						<p><a href="gg3/gg3.html"> Giorno 3 </a></p> 
+					</div>
+				</li> 
+			</ul> 
+		</nav>
+		<section>
+		<article> 
+			<p style="margin-top:80px;"> In questo breve blog vi descriveremo alcuni dei bei momenti passati nel viaggio che abbiamo fatto a Roma, qui sotto potrete vedere uno slideshow in cui sono raccolte le opere che ci sono piaciute di più. 
+			Ogni immagine sarà collegata alla pagina in cui è contenuta...</p> 
+		<div style="margin:15px">
+		<article style=" margin:auto"> 
+			<div class="w3-content w3-display-container" style="margin: auto;">
+			  <a href="gg1/gg1.html"> <img class="mySlides" src="immagini/estasi.jpg"> </a>
+			  <a href="gg1/gg1.html"> <img class="mySlides" src="immagini/vocazione.jpg"> </a>
+			  <a href="gg2/gg2.html"> <img class="mySlides" src="immagini/calò.jpg"> </a>
+			  <a href="gg2/gg2.html"> <img class="mySlides" src="immagini/canova.jpg"> </a>
+			  <a href="gg3/gg3.html"> <img class="mySlides" src="immagini/quattro.jpg"> </a>
+			  <a href="gg3/gg3.html"> <img class="mySlides" src="immagini/sei.jpg"> </a>
+			  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+			  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+			</div>
+		</article> 
+		</div>
+		<article class="collegamenti"> 
+			<a href="gg1/gg1.html"> <h2 > Giorno 1 </h2> 
+			<p > Il giorno della partenza era arrivato, ci eravamo travati verso le 6:30 di mattina ed eravamo pronti per partire e vedere questa città di cui ci avevano parlato tanto bene. 
+			Quasi neanche da dire: il viaggio è andato bene e nessuno è stato male, siamo anche riusciti a fermarci per prendere qualcosa da mangiare. Quando siamo arrivati in hotel abbiamo appoggiato le valigie
+			e ci siamo incontrati con la guida che ci ha portato a vedere un sacco di opere e luoghi, qui c'è una raccolta di quelli più belli e importanti... </p> </a>
+		</article> 
+		<article class="collegamenti"> 
+			<a href="gg2/gg2.html"> <h2> Giorno 2 </h2> 
+			<p> Alla mattina del secondo giorno abbiamo deciso di andare a vedere le street art presenti nel quartiere Tor Marancia. 
+			Queste sono alcune delle fotografie che siamo riusciti a fare... </p>  </a> 
+		</article> 
+		<article class="collegamenti">
+			<a href="gg3/gg3.html"> <h2> Giorno 3 </h2> 
+			<p> Il terzo giorno della nostra gita a roma siamo andati a visitare i musei vaticani. Appena entrati abbiamo fatto alcuni controlli dove abbiamo fatto passare i nostri zaini attraverso degli scanner mentre noi passavamo sotto a dei metal detector.
+				Entrati nei musei ci è stata data una radiolina con connesso un auroicolare, questa era sintonizzata sul canale in cui la nostra guida stava parlando perciò siamo stati in grado di comprendere tutto nonostante la grande folla che c'era quel giorno ai musei vaticani... </p> 
+		</article> 
+	<hr /> 
+		<br />
+		
+	</section>
+	<footer> 
+		<a name="footer">
+		Questo sito è stato realizzato da Bertelli Roberto e Lusetti Simone, due stdenti dell'ITI Leonardo da Vinci di Carpi.
+	</footer>
+	</div >
+	</br>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+
+</body>
+</html>
